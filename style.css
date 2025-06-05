@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Be";
+  src: url(resources/BeVietnamPro-Medium.ttf) format(truetype);
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-display: swap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 80rem;
+  height: auto;
+  background-color: #12111f;
+  gap: 4rem;
+  font-family: "Be";
+  padding: 0 0 5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.title {
+  width: 70%;
+  background-image: url(resources/faq-title-bg@2x.png);
+  background-size: cover;
+  border: none;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 50%;
+  font-size: 3rem;
+  color: #97a3b6;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: #f2f5f9;
+}
+
+p {
+  font-size: 1rem;
+  color: #2a2936;
+}
+
+.fourth {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+  margin-top: 1.5rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1.25rem;
+  color: #f2f5f9;
+  background: transparent;
+  font-size: 0.875rem;
+}
+
+.background {
+  background-color: #2a2936;
+  border-radius: 1.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  max-height: 400px;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.accordeon img {
+  transition: transform 0.3s ease;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action h2 {
+  color: #cdd5e0;
+}
+
+.accordeon p {
+  color: #cdd5e0;
+  text-align: left;
+  display: none;
+  transition: max-height 0.4s ease;
+  line-height: 1.6;
+}
+
+.accordeon.open p {
+  display: block;
+}
+
+.accordeon.open {
+  background-color: #2a2936;
+  border-radius: 0.5rem;
+}
+
+.accordeon.open h2{
+    color: #f2f5f9;
+}

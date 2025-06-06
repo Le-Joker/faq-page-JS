@@ -129,9 +129,60 @@ main {
 
 .accordeon.open {
   background-color: #2a2936;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
 }
 
-.accordeon.open h2{
+.accordeon.open h2 {
+  color: #f2f5f9;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    width: 85%;
+  }
+
+  .fourth {
+    width: 61%;
+  }
+
+  .accordeon {
+    width: 83%;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 13px;
+  }
+
+  .title {
+    width: 100%;
+    height: 12rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .fourth {
+    width: 95%;
+  }
+
+  .accordeon {
+    width: 94%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
     color: #f2f5f9;
+  }
+
+  p {
+    font-size: 1.17rem;
+    color: #2a2936;
+  }
 }
